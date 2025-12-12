@@ -355,6 +355,8 @@ class Checker:
             headings_data = self.check_headings()
             tables_data = self.check_all_tables()
             # добавили валидацию рисунков
+            # хуй пойми
+
             
             if 'error' in headings_data:
                 print(f"\n ОШИБКА ПРОВЕРКИ ЗАГОЛОВКОВ: {headings_data['error']}")
