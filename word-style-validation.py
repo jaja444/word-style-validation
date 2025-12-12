@@ -354,6 +354,7 @@ class Checker:
             self.doc = self.word_app.Documents.Open(self.file_path)
             headings_data = self.check_headings()
             tables_data = self.check_all_tables()
+            # добавили валидацию рисунков
             
             if 'error' in headings_data:
                 print(f"\n ОШИБКА ПРОВЕРКИ ЗАГОЛОВКОВ: {headings_data['error']}")
@@ -437,3 +438,5 @@ if __name__ == "__main__":
     file_path = r"C:\Users\glebk\Desktop\тест.docx"
     checker = Checker(file_path)
     results = checker.print_results()
+
+    
